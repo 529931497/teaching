@@ -25,7 +25,6 @@ public class TeachingController {
         }
         System.out.println(name + pass);
         return "null";
-
     }
 
 
