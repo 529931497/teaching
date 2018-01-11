@@ -42,17 +42,20 @@
     <span class="systemlogo"></span>
 
     <div class="loginbox">
+        <form action="login" method="post">
+            <ul>
+                <li><input name="name" type="text" class="loginuser" onclick="JavaScript:this.value=''"/></li>
+                <li><input name="pass" type="password" class="loginpwd"  onclick="JavaScript:this.value=''"/></li>
+                <li><input type="radio" name="guy" value="admin"/>管理员
+                    <input type="radio" name="guy" value="teacher"/>教师
+                    <input type="radio" name="guy" value="student" checked/>学生
+                    <#--if( $('input:radio:checked').val() == 'admin'){javascript:window.location='adminLogin';-->
+                    <input name="" type="submit" class="loginbtn" value="登录"  onclick=""  />
+                    <input name="" type="button" class="loginbtn" value="注册"  onclick="javascript:window.location='main.html'"  />
+                </li>
+            </ul>
+        </form>
 
-        <ul>
-            <li><input name="" type="text" class="loginuser" value="admin" onclick="JavaScript:this.value=''"/></li>
-            <li><input name="" type="text" class="loginpwd" value="密码" onclick="JavaScript:this.value=''"/></li>
-            <li><input type="radio" name="guy"/>管理员
-                <input type="radio" name="guy"/>教师
-                <input type="radio" name="guy" checked/>学生
-                <input name="" type="button" class="loginbtn" value="登录"  onclick="javascript:window.location='main.html'"  />
-                <input name="" type="button" class="loginbtn" value="注册"  onclick="javascript:window.location='main.html'"  />
-            </li>
-        </ul>
 
 
     </div>
